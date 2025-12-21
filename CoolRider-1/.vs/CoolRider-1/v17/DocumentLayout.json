@@ -1,0 +1,306 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|c:\\users\\luo ziyi\\desktop\\coolrider-1\\coolrider-1\\views\\map\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|solutionrelative:coolrider-1\\views\\map\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|c:\\users\\luo ziyi\\desktop\\coolrider-1\\coolrider-1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|solutionrelative:coolrider-1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|c:\\users\\luo ziyi\\desktop\\coolrider-1\\coolrider-1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|solutionrelative:coolrider-1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|c:\\users\\luo ziyi\\desktop\\coolrider-1\\coolrider-1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|solutionrelative:coolrider-1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|c:\\users\\luo ziyi\\desktop\\coolrider-1\\coolrider-1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|solutionrelative:coolrider-1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|c:\\users\\luo ziyi\\desktop\\coolrider-1\\coolrider-1\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|solutionrelative:coolrider-1\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|c:\\users\\luo ziyi\\desktop\\coolrider-1\\coolrider-1\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|solutionrelative:coolrider-1\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|c:\\users\\luo ziyi\\desktop\\coolrider-1\\coolrider-1\\models\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|solutionrelative:coolrider-1\\models\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|c:\\users\\luo ziyi\\desktop\\coolrider-1\\coolrider-1\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|solutionrelative:coolrider-1\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|c:\\users\\luo ziyi\\desktop\\coolrider-1\\coolrider-1\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|solutionrelative:coolrider-1\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|c:\\users\\luo ziyi\\desktop\\coolrider-1\\coolrider-1\\models\\adminactivationcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|solutionrelative:coolrider-1\\models\\adminactivationcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|c:\\users\\luo ziyi\\desktop\\coolrider-1\\coolrider-1\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|solutionrelative:coolrider-1\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|c:\\users\\luo ziyi\\desktop\\coolrider-1\\coolrider-1\\controllers\\mapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|solutionrelative:coolrider-1\\controllers\\mapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|c:\\users\\luo ziyi\\desktop\\coolrider-1\\coolrider-1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|solutionrelative:coolrider-1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|c:\\users\\luo ziyi\\desktop\\coolrider-1\\coolrider-1\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|solutionrelative:coolrider-1\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__ProjectModels/CoolRiderDB/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|c:\\users\\luo ziyi\\desktop\\coolrider-1\\coolrider-1\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80906477-1023-424C-A471-9A8089404151}|CoolRider-1\\CoolRider-1.csproj|solutionrelative:coolrider-1\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{7f40df72-066b-4810-a08b-c0fbed76c948}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Program.cs",
+              "RelativeDocumentMoniker": "CoolRider-1\\Program.cs",
+              "ToolTip": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Program.cs",
+              "RelativeToolTip": "CoolRider-1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T07:07:47.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\appsettings.json",
+              "RelativeDocumentMoniker": "CoolRider-1\\appsettings.json",
+              "ToolTip": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\appsettings.json",
+              "RelativeToolTip": "CoolRider-1\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-21T07:07:44.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Models\\LoginModel.cs",
+              "RelativeDocumentMoniker": "CoolRider-1\\Models\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Models\\LoginModel.cs",
+              "RelativeToolTip": "CoolRider-1\\Models\\LoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T07:02:53.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "CoolRider-1\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "CoolRider-1\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T07:02:52.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AdminActivationCode.cs",
+              "DocumentMoniker": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Models\\AdminActivationCode.cs",
+              "RelativeDocumentMoniker": "CoolRider-1\\Models\\AdminActivationCode.cs",
+              "ToolTip": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Models\\AdminActivationCode.cs",
+              "RelativeToolTip": "CoolRider-1\\Models\\AdminActivationCode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T07:02:00.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CoolRider-1\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CoolRider-1\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T07:00:12.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MapController.cs",
+              "DocumentMoniker": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Controllers\\MapController.cs",
+              "RelativeDocumentMoniker": "CoolRider-1\\Controllers\\MapController.cs",
+              "ToolTip": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Controllers\\MapController.cs",
+              "RelativeToolTip": "CoolRider-1\\Controllers\\MapController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T06:55:21.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Views\\Map\\Index.cshtml",
+              "RelativeDocumentMoniker": "CoolRider-1\\Views\\Map\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Views\\Map\\Index.cshtml",
+              "RelativeToolTip": "CoolRider-1\\Views\\Map\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-21T06:54:23.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "CoolRider-1\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "CoolRider-1\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-21T06:39:42.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "dbo.Users.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/CoolRiderDB/True/SqlTable/dbo.Users.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/CoolRiderDB/True/SqlTable/dbo.Users.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-12-21T06:34:07.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "CoolRider-1\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "CoolRider-1\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAkwEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-21T06:32:08.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "CoolRider-1\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "CoolRider-1\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAkwHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T06:22:28.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RegisterModel.cs",
+              "DocumentMoniker": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Models\\RegisterModel.cs",
+              "RelativeDocumentMoniker": "CoolRider-1\\Models\\RegisterModel.cs",
+              "ToolTip": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Models\\RegisterModel.cs",
+              "RelativeToolTip": "CoolRider-1\\Models\\RegisterModel.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T06:26:13.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "CoolRider-1\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "CoolRider-1\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T06:24:31.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "CoolRider-1\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "CoolRider-1\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-21T04:54:02.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CoolRider-1\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CoolRider-1\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-21T04:53:58.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CoolRider-1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Luo Ziyi\\Desktop\\CoolRider-1\\CoolRider-1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CoolRider-1\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAkwFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-21T04:53:50.133Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

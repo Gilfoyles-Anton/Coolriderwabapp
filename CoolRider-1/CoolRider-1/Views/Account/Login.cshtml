@@ -1,0 +1,32 @@
+﻿@model CoolRider_1.Models.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="d-flex justify-content-center mt-5">
+    <div class="card shadow-sm" style="width: 22rem; background-color: rgba(255, 255, 255, 0.85);">
+        <div class="card-body">
+            <h4 class="card-title text-center mb-4">Login</h4>
+
+            <form asp-action="Login" method="post">
+                <div class="form-group mb-3">
+                    <label asp-for="Username"></label>
+                    <input asp-for="Username" class="form-control" />
+                    <span asp-validation-for="Username" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Password"></label>
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

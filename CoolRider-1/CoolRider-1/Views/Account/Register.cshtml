@@ -1,0 +1,75 @@
+﻿@model CoolRider_1.Models.RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="d-flex justify-content-center mt-5">
+    <div class="card shadow-sm" style="width: 28rem; background-color: rgba(255, 255, 255, 0.85);">
+        <div class="card-body">
+            <h4 class="card-title text-center mb-4">Register</h4>
+
+            <form asp-action="Register" method="post">
+                <div class="form-group mb-3">
+                    <label asp-for="Username"></label>
+                    <input asp-for="Username" class="form-control" />
+                    <span asp-validation-for="Username" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Email"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="PhoneNumber"></label>
+                    <input asp-for="PhoneNumber" class="form-control" />
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="PasswordHash"></label>
+                    <input asp-for="PasswordHash" class="form-control" />
+                    <span asp-validation-for="PasswordHash" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="ConfirmPassword"></label>
+                    <input asp-for="ConfirmPassword" class="form-control" />
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="Role">Select Role</label>
+                    <select id="Role" name="Role" class="form-control">
+                        <option value="User">User</option>
+                        <option value="Admin">Admin</option>
+                    </select>
+                </div>
+
+                <div class="form-group mb-3" id="AdminCodeContainer" style="display:none;">
+                    <label for="AdminCode">Admin Activation Code</label>
+                    <input type="text" id="AdminCode" name="AdminCode" class="form-control" />
+                    <span class="text-danger" id="AdminCodeError"></span>
+                </div>
+
+                <button type="submit" class="btn btn-success w-100">Register</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.getElementById("Role").addEventListener("change", function () {
+            var role = this.value;
+            var adminCodeContainer = document.getElementById("AdminCodeContainer");
+            if (role === "Admin") {
+                adminCodeContainer.style.display = "block";
+            } else {
+                adminCodeContainer.style.display = "none";
+            }
+        });
+    </script>
+}

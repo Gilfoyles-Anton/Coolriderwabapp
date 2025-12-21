@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Map";
+}
+
+<div class="d-flex flex-column align-items-center mt-5">
+
+    <!-- Google Maps Standard -->
+    <div class="card shadow-sm mb-4" style="width: 40rem; background-color: rgba(255, 255, 255, 0.85);">
+        <div class="card-body">
+            <h4 class="card-title text-center mb-4">Google Maps - Standard</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.502!2d106.700!3d10.776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3f!2sHo%20Chi%20Minh%20City!5e0!3m2!1sen!2s!4v1630000000000!5m2!1sen!2s"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <!-- Google Maps Satellite (using embed with satellite layer) -->
+    <div class="card shadow-sm mb-4" style="width: 40rem; background-color: rgba(255, 255, 255, 0.85);">
+        <div class="card-body">
+            <h4 class="card-title text-center mb-4">Google Maps - Satellite</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3919.502!2d106.700!3d10.776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1630000000000&maptype=satellite"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <!-- Google Maps Street View (embed a street view panorama) -->
+    <div class="card shadow-sm mb-4" style="width: 40rem; background-color: rgba(255, 255, 255, 0.85);">
+        <div class="card-body">
+            <h4 class="card-title text-center mb-4">Google Maps - Street View</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1630000000000!6m8!1m7!1sCAoSLEFGMVFpcE5oZk5hZkZsV1p0dGZyVjZsQ2ZzV1ZrZlZsV1p0dGZyVjZsQ2ZzV1ZrZlZs!2m2!1d10.776!2d106.700!3f0!4f0!5f0.7820865974627469"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <!-- Google Maps Directions (embed route view without API key) -->
+    <div class="card shadow-sm mb-4" style="width: 40rem; background-color: rgba(255, 255, 255, 0.85);">
+        <div class="card-body">
+            <h4 class="card-title text-center mb-4">Google Maps - Directions</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3919.502!2d106.700!3d10.776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m5!2sHo%20Chi%20Minh%20City!3sTan%20Son%20Nhat%20Airport!5e0!3m2!1sen!2s!4v1630000000000"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <!-- OpenStreetMap -->
+    <div class="card shadow-sm mb-4" style="width: 40rem; background-color: rgba(255, 255, 255, 0.85);">
+        <div class="card-body">
+            <h4 class="card-title text-center mb-4">OpenStreetMap</h4>
+            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=106.68%2C10.77%2C106.71%2C10.78&layer=mapnik"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <!-- Bing Maps -->
+    <div class="card shadow-sm mb-4" style="width: 40rem; background-color: rgba(255, 255, 255, 0.85);">
+        <div class="card-body">
+            <h4 class="card-title text-center mb-4">Bing Maps</h4>
+            <iframe src="https://www.bing.com/maps/embed?h=400&w=600&cp=10.776~106.700&lvl=12&typ=d&sty=r&src=SHELL&FORM=MBEDV8"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+</div>
