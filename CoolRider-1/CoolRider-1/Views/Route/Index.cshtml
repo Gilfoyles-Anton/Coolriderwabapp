@@ -1,0 +1,67 @@
+@{
+    ViewData["Title"] = "Route";
+    Layout = "_Layout";
+}
+
+<!-- Leaflet styles -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+    #map {
+        height: 600px;
+        width: 100%;
+    }
+</style>
+
+<div class="card mt-4">
+    <div class="card-body">
+        <h1 class="display-6">Route</h1>
+        <p class="text-muted mb-3">This is the Route page, where you can display routes, maps, or navigation logic.</p>
+
+        <hr />
+        <p>Sample content:</p>
+        <ul>
+            <li>Route name: Sample Route A</li>
+            <li>Start: Marina Bay</li>
+            <li>End: Botanic Gardens</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Map card -->
+<div class="card mt-4">
+    <div class="card-header">🚴 Live CoolRoute (Powered by Python AI)</div>
+    <div class="card-body">
+        <div id="map"></div>
+    </div>
+</div>
+
+<!-- Leaflet JS & Omnivore plugin -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js"></script>
+
+<script>
+    // Initialize the map centered on Singapore
+    var map = L.map('map').setView([1.3521, 103.94], 14);
+
+    // Use OpenStreetMap tile layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+    // Custom route styles: red = fastest, green = recommended, blue = others
+    var customLayer = L.geoJson(null, {
+        style: function(feature) {
+            var name = feature.properties.name || "";
+            if (name.includes("Fastest")) return { color: "red", weight: 5, opacity: 0.7 };
+            if (name.includes("Cool") || name.includes("Recommended")) return { color: "green", weight: 5, opacity: 0.8 };
+            return { color: "blue", weight: 3 };
+        }
+    });
+
+    // KML file URL (GitHub Raw)
+    var kmlUrl = 'https://raw.githubusercontent.com/swaminaathakrishnan/Cool_Route_prototype/master/output/latest_route.kml';
+
+    // Load the KML route onto the map
+    omnivore.kml(kmlUrl, null, customLayer).addTo(map);
+</script>
