@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -45,6 +45,10 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Map" asp-action="Index">Map</a>
                         </li>
+                        <!-- Added Route menu -->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Route" asp-action="Index">Route</a>
+                        </li>
                     </ul>
 
                     <!-- Right side Login/Register buttons -->
@@ -79,3 +83,4 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
