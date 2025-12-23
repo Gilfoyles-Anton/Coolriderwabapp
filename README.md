@@ -1,6 +1,6 @@
 # CoolRider Web Application
 
-CoolRider is a comprehensive ASP.NET Core MVC web application project that demonstrates full-stack development practices, including secure authentication, database integration, responsive UI design, and interactive map features. This README provides a detailed overview of the project, its architecture, technologies, setup instructions, and development notes. The content is intentionally extensive (over 1500 words) so you can copy it directly into your GitHub repository as a complete README.
+CoolRider is a comprehensive ASP.NET Core MVC web application project that demonstrates full-stack development practices, including secure authentication, database integration, responsive UI design, and interactive map features.
 
 ---
 
