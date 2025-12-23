@@ -1,67 +1,160 @@
 @{
-    ViewData["Title"] = "Route";
+    ViewData["Title"] = "Leaflet Route Planner";
     Layout = "_Layout";
 }
 
-<!-- Leaflet styles -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
 <style>
     #map {
-        height: 600px;
         width: 100%;
+        height: 650px;
+        border-radius: 8px;
+    }
+
+    .panel {
+        background: #ffffff;
+        padding: 16px;
+        border-radius: 8px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
+    .result-box {
+        background: #f8f9fa;
+        padding: 12px;
+        border-radius: 6px;
+        margin-top: 10px;
     }
 </style>
 
-<div class="card mt-4">
-    <div class="card-body">
-        <h1 class="display-6">Route</h1>
-        <p class="text-muted mb-3">This is the Route page, where you can display routes, maps, or navigation logic.</p>
+<div class="container-fluid mt-4">
+    <div class="row">
 
-        <hr />
-        <p>Sample content:</p>
-        <ul>
-            <li>Route name: Sample Route A</li>
-            <li>Start: Marina Bay</li>
-            <li>End: Botanic Gardens</li>
-        </ul>
+        <!-- LEFT CONTROL PANEL -->
+        <div class="col-md-4">
+            <div class="panel">
+                <h4>🗺 Route Planner (Leaflet)</h4>
+                <p class="text-muted">OpenStreetMap based routing</p>
+
+                <div class="mb-3">
+                    <label class="form-label">From</label>
+                    <input id="origin" class="form-control" placeholder="Enter starting place" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">To</label>
+                    <input id="destination" class="form-control" placeholder="Enter destination" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Travel Mode</label>
+                    <select id="mode" class="form-select">
+                        <option value="driving">🚗 Driving</option>
+                        <option value="cycling">🚴 Cycling</option>
+                        <option value="walking">🚶 Walking</option>
+                    </select>
+                </div>
+
+                <button class="btn btn-primary w-100" onclick="calculateRoute()">
+                    🔍 Search Route
+                </button>
+
+                <div id="result" class="result-box"></div>
+            </div>
+        </div>
+
+        <!-- MAP -->
+        <div class="col-md-8">
+            <div id="map"></div>
+        </div>
+
     </div>
 </div>
 
-<!-- Map card -->
-<div class="card mt-4">
-    <div class="card-header">🚴 Live CoolRoute (Powered by Python AI)</div>
-    <div class="card-body">
-        <div id="map"></div>
-    </div>
-</div>
-
-<!-- Leaflet JS & Omnivore plugin -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js"></script>
 
 <script>
-    // Initialize the map centered on Singapore
-    var map = L.map('map').setView([1.3521, 103.94], 14);
+    let map;
+    let routeLayer;
+    let startMarker;
+    let endMarker;
 
-    // Use OpenStreetMap tile layer
+    // Init map
+    map = L.map('map').setView([1.3521, 103.8198], 13);
+
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '© OpenStreetMap'
     }).addTo(map);
 
-    // Custom route styles: red = fastest, green = recommended, blue = others
-    var customLayer = L.geoJson(null, {
-        style: function(feature) {
-            var name = feature.properties.name || "";
-            if (name.includes("Fastest")) return { color: "red", weight: 5, opacity: 0.7 };
-            if (name.includes("Cool") || name.includes("Recommended")) return { color: "green", weight: 5, opacity: 0.8 };
-            return { color: "blue", weight: 3 };
+    async function geocode(place) {
+        const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(place)}`;
+        const response = await fetch(url);
+        const data = await response.json();
+
+        if (data.length === 0) {
+            throw "Location not found";
         }
-    });
 
-    // KML file URL (GitHub Raw)
-    var kmlUrl = 'https://raw.githubusercontent.com/swaminaathakrishnan/Cool_Route_prototype/master/output/latest_route.kml';
+        return {
+            lat: parseFloat(data[0].lat),
+            lon: parseFloat(data[0].lon),
+            name: data[0].display_name
+        };
+    }
 
-    // Load the KML route onto the map
-    omnivore.kml(kmlUrl, null, customLayer).addTo(map);
+    async function calculateRoute() {
+
+        const originText = document.getElementById("origin").value;
+        const destText = document.getElementById("destination").value;
+        const mode = document.getElementById("mode").value;
+
+        if (!originText || !destText) {
+            alert("Please enter both origin and destination.");
+            return;
+        }
+
+        try {
+            const start = await geocode(originText);
+            const end = await geocode(destText);
+
+            // Remove old layers
+            if (routeLayer) map.removeLayer(routeLayer);
+            if (startMarker) map.removeLayer(startMarker);
+            if (endMarker) map.removeLayer(endMarker);
+
+            startMarker = L.marker([start.lat, start.lon]).addTo(map).bindPopup("Start").openPopup();
+            endMarker = L.marker([end.lat, end.lon]).addTo(map).bindPopup("Destination");
+
+            const url = `https://router.project-osrm.org/route/v1/${mode}/${start.lon},${start.lat};${end.lon},${end.lat}?overview=full&geometries=geojson`;
+
+            const res = await fetch(url);
+            const json = await res.json();
+
+            const route = json.routes[0];
+
+            routeLayer = L.geoJSON(route.geometry, {
+                style: {
+                    color: "blue",
+                    weight: 5,
+                    opacity: 0.8
+                }
+            }).addTo(map);
+
+            map.fitBounds(routeLayer.getBounds());
+
+            const distanceKm = (route.distance / 1000).toFixed(2);
+            const durationMin = (route.duration / 60).toFixed(1);
+
+            document.getElementById("result").innerHTML = `
+                <h6>📊 Route Information</h6>
+                <p><strong>Distance:</strong> ${distanceKm} km</p>
+                <p><strong>Estimated Time:</strong> ${durationMin} minutes</p>
+            `;
+
+        } catch (e) {
+            alert("Failed to calculate route.");
+        }
+    }
 </script>
+
