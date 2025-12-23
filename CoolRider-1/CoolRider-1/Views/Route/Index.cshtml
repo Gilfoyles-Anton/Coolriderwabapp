@@ -47,6 +47,11 @@
                 </div>
 
                 <div class="mb-3">
+                    <label class="form-label">Departure Time</label>
+                    <input id="departureTime" type="datetime-local" class="form-control" />
+                </div>
+
+                <div class="mb-3">
                     <label class="form-label">Travel Mode</label>
                     <select id="mode" class="form-select">
                         <option value="driving">🚗 Driving</option>
@@ -108,9 +113,15 @@
         const originText = document.getElementById("origin").value;
         const destText = document.getElementById("destination").value;
         const mode = document.getElementById("mode").value;
+        const departureInput = document.getElementById("departureTime").value;
 
         if (!originText || !destText) {
             alert("Please enter both origin and destination.");
+            return;
+        }
+
+        if (!departureInput) {
+            alert("Please select a departure time.");
             return;
         }
 
@@ -143,13 +154,28 @@
 
             map.fitBounds(routeLayer.getBounds());
 
+            // Distance & duration
             const distanceKm = (route.distance / 1000).toFixed(2);
-            const durationMin = (route.duration / 60).toFixed(1);
+            const durationSec = route.duration;
+            const durationMin = (durationSec / 60).toFixed(1);
+
+            // Arrival time calculation
+            const departureTime = new Date(departureInput);
+            const arrivalTime = new Date(departureTime.getTime() + durationSec * 1000);
+
+            const arrivalTimeStr = arrivalTime.toLocaleString([], {
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
 
             document.getElementById("result").innerHTML = `
                 <h6>📊 Route Information</h6>
                 <p><strong>Distance:</strong> ${distanceKm} km</p>
-                <p><strong>Estimated Time:</strong> ${durationMin} minutes</p>
+                <p><strong>Estimated Travel Time:</strong> ${durationMin} minutes</p>
+                <p><strong>Estimated Arrival Time:</strong> ${arrivalTimeStr}</p>
             `;
 
         } catch (e) {
